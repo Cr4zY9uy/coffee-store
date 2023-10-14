@@ -1,0 +1,25 @@
+.logo {
+    font-size: 43px;
+    font-weight: 900;
+}
+
+#search {
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    outline: none;
+}
+
+.bi-search {
+    right: 30px;
+    position: relative;
+
+}
+
+.bi-person-circle,
+.bi-cart3 {
+    font-size: 22px;
+}
+
+.group-icon_header p {
+    color: #808080;
+    font-size: 12px;
+}
