@@ -16,6 +16,7 @@ import Slider from './components/layouts/slider';
 import Brand from './components/layouts/brand';
 import Product_grid from './components/layouts/product_grid';
 import Purchasing_policies from './components/layouts/puchasing_policies';
+import Footer from './components/layouts/footer';
 function App() {
   return (
     <div className="App">
@@ -38,6 +39,7 @@ function App() {
             <Route path='/account' element={<Account />} />
           </Routes>
           <Purchasing_policies />
+          <Footer />
         </BrowserRouter>
       </main>
     </div>
