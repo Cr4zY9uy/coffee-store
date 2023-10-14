@@ -1,9 +1,10 @@
+import './header.css';
 function Header() {
     return (
         <header class="container pt-3">
             <div class="d-flex row header justify-content-between">
                 <div class="col-2 d-flex">
-                    <img src="./assets/images/logo.png" alt="Logoimage" width="30px" height="40px" /><span class="logo">Notos</span></div>
+                    <img src="./images/logo.png" alt="Logoimage" width="30px" height="40px" style={{ marginTop: "7px" }} /><span class="logo">Notos</span></div>
                 <div class="col-8">
                     <form class="d-flex justify-content-end align-items-center me-5">
                         <input type="text" name="search" id="search" placeholder="Find our product..." class="w-75" /><i
