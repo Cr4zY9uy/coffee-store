@@ -1,48 +1,15 @@
-.products {
-    padding-top: 50px;
-}
-
-.brands-icon_group {
-    margin: 50px auto;
-}
-
-.filter-title {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-}
-
-.filter-title div {
-    padding: 0 20px;
-}
-
-.filter-title a {
-    text-decoration: none;
-    color: black;
-    font-size: 2em;
-    font-weight: 900;
-}
-
-.filter-title a:hover {
-    color: red;
-}
-
-.filter-title a.active {
-    content: "";
-    width: 100%;
-    border-bottom: 2px solid red;
-    transition: all 0.35 ease-in-out;
-}
-
 .product-list>figure {
     width: 225px;
     margin: 0 10px 30px 10px;
     overflow: hidden;
     position: relative;
-
+    height: 400px;
 }
 
 
+.product-list>figure:last-of-type {
+    margin-right: 0;
+}
 
 .product-list>figure:first-of-type {
     margin-left: 0;
@@ -72,10 +39,6 @@
 
 .product-list>figure p:first-of-type {
     margin-top: 10px;
-}
-
-.product-list>figure p:last-of-type {
-    margin-bottom: 60px;
 }
 
 .product-action>button:hover {

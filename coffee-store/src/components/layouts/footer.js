@@ -23,7 +23,7 @@ function Footer() {
                     <p>NotosCoffee@gmail.com</p>
                 </div>
             </div>
-            <div className="copyright"> <h5 class="fs-6">Copyright © 2023 by Anh Van. All Rights
+            <div className="copyright"> <h5 className="fs-6">Copyright © 2023 by Anh Van. All Rights
                 Reserved.</h5></div>
         </footer>
     );

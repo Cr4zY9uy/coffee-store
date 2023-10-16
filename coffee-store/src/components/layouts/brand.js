@@ -1,24 +1,24 @@
 import './brand.css';
 function Brand() {
     return (
-        <section class="container brands-icon_group">
-            <div class="row d-flex justify-content-between brands">
-                <div class="col-2">
+        <section className="container brands-icon_group">
+            <div className="row d-flex justify-content-between brands">
+                <div className="col-2">
                     <img src="./images/brands.png" alt="Brand image" />
                 </div>
-                <div class="col-2">
+                <div className="col-2">
                     <img src="./images/brands.png" alt="Brand image" />
                 </div>
-                <div class="col-2">
+                <div className="col-2">
                     <img src="./images/brands.png" alt="Brand image" />
                 </div>
-                <div class="col-2">
+                <div className="col-2">
                     <img src="./images/brands.png" alt="Brand image" />
                 </div>
-                <div class="col-2">
+                <div className="col-2">
                     <img src="./images/brands.png" alt="Brand image" />
                 </div>
-                <div class="col-2">
+                <div className="col-2">
                     <img src="./images/brands.png" alt="Brand image" />
                 </div>
             </div>

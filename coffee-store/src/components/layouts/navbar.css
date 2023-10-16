@@ -62,13 +62,13 @@
     z-index: 10;
 }
 
-.menu1::after {
+/* .nav-bar a:hover::after {
     content: "";
     height: 100%;
     width: 1px;
-
+    border: 1px solid red;
     position: relative;
     right: 0;
     top: 0;
     background-color: #000000;
-}
+} */

@@ -1,19 +1,21 @@
+import { NavLink } from 'react-router-dom';
 import './navbar.css';
 
 function Navbars() {
     return (
-        <nav class="nav-bar container d-flex ps-0">
-            <div class="menu1">
-                <button class="dropmenu">Category
+        <nav className="nav-bar container d-flex ps-0">
+            <div className="menu1">
+                <button className="dropmenu">Category
                 </button>
-                <div class="menu2">
+                <div className="menu2">
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
                     <a href="#">Link 3</a>
                 </div>
             </div>
-            <a href="#home">Home</a>
-            <a href="#news">Products</a>
+            <NavLink to={"/"}>Home</NavLink>
+            <NavLink to={"/products"}>Products</NavLink>
+            <NavLink to={"/favourite"}>Favourite</NavLink>
         </nav>
     );
 }
