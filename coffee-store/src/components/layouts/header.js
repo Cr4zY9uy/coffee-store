@@ -17,9 +17,9 @@ function Header() {
                         <div className='account'>
                             <NavLink to={"/login"}><span>Login</span></NavLink><span>/</span><NavLink to={"/register"}><span>Register</span></NavLink>
                             <div className='sub_menu'>
-                                <NavLink to={"/Account"}><span>Account</span></NavLink>
+                                <NavLink to={"/account"}><span>Account</span></NavLink>
                                 <NavLink to={"/orders"}><span>Orders</span></NavLink>
-                                <NavLink><span>Logout</span></NavLink>
+                                <NavLink to={"/orderdetail"}><span>Logout</span></NavLink>
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 import './purchasing_policies.css';
-function Purchasing_policies() {
+function PurchasingPolicies() {
     return (
         <section className="container purchasing-policies">
             <div className="row">
@@ -39,4 +39,4 @@ function Purchasing_policies() {
 
 }
 
-export default Purchasing_policies;
+export default PurchasingPolicies;

@@ -31,6 +31,7 @@
     display: block;
     position: absolute;
     bottom: 0px;
+    animation: SlideUp .3s ease-in-out;
 }
 
 .product-list>figure p {
@@ -44,4 +45,66 @@
 .product-action>button:hover {
     background-color: #a49e9e;
     color: #ebebeb;
+}
+
+@keyframes SlideUp {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.favourite {
+    position: relative;
+    width: 35px;
+    height: 50px;
+    overflow: hidden;
+    border-top: 1px solid #c1bebe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 185px;
+}
+
+.favourite:before,
+.favourite:after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    height: 100%;
+    width: 50%;
+    z-index: 10;
+    border: 1px solid #c1bebe;
+    box-sizing: border-box;
+    background-color: #c1bebe;
+}
+
+.favourite:before {
+    left: 0;
+    transform-origin: 0 0;
+    transform: skewY(-20deg);
+    border-width: 0 0 1px 1px;
+}
+
+.favourite:after {
+    right: 0;
+    transform-origin: 100% 0;
+    transform: skewY(20deg);
+    border-width: 0 1px 1px 0;
+}
+
+.favourite>i {
+    color: whitesmoke;
+    z-index: 100;
+
+}
+
+.favourite:hover>i {
+    color: red;
+
 }

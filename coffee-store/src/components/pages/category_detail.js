@@ -1,14 +1,16 @@
 import PaginationProduct from "../layouts/pagination";
-import Product_list from "../layouts/product_list";
+import ProductList from "../layouts/product_list";
 
-function Category_detail() {
-    <>
-        <h1>Category Name</h1>
-        <Product_list />
-        <Product_list />
-        <Product_list />
-        <Product_list />
-        <PaginationProduct />
-    </>
+function CategoryDetail() {
+    return (
+        <>
+            <h1>Category Name</h1>
+            <ProductList />
+            <ProductList />
+            <ProductList />
+            <ProductList />
+            <PaginationProduct />
+        </>
+    );
 }
-export default Category_detail;
+export default CategoryDetail;
