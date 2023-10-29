@@ -15,11 +15,15 @@ import Footer from './components/layouts/footer';
 import Product from './components/pages/product';
 import Orders from './components/pages/orders';
 import OrdersDetail from './components/pages/orderetail';
+import { useLocation } from 'react-router-dom';
 function App() {
+  const location = useLocation();
+
+  const hideHeaderOnLogin = location.pathname === '/login' || location.pathname === '/sign-up';
   return (
     <div className="App">
-      <Header />
-      <Navbars />
+      {!hideHeaderOnLogin && <Header />}
+      {!hideHeaderOnLogin && <Navbars />}
       <main>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -34,7 +38,7 @@ function App() {
           <Route path='/orders' element={<Orders />} />
           <Route path='/orderdetail' element={<OrdersDetail />} />
         </Routes>
-        <Footer />
+        {!hideHeaderOnLogin && <Footer />}
       </main>
     </div>
   );

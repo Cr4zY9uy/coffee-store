@@ -15,7 +15,7 @@ function Header() {
                 <div className="d-flex col-2 justify-content-end group-icon_header">
                     <div className="d-flex flex-column align-items-center me-4 main_menu"> <i className="bi bi-person-circle"></i>
                         <div className='account'>
-                            <NavLink to={"/login"}><span>Login</span></NavLink><span>/</span><NavLink to={"/register"}><span>Register</span></NavLink>
+                            <NavLink to={"/login"}><span>Login</span></NavLink><span>/</span><NavLink to={"/sign-up"}><span>Register</span></NavLink>
                             <div className='sub_menu'>
                                 <NavLink to={"/account"}><span>Account</span></NavLink>
                                 <NavLink to={"/orders"}><span>Orders</span></NavLink>

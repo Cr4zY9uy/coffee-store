@@ -1,29 +1,27 @@
+import React from 'react'
 import './login.css';
-function Login() {
+import { Link } from 'react-router-dom';
+export default function Login() {
+
+    // console.log(watch('username'));
+
     return (
-        <div className="wrapper">
-            <div className="form-box login">
+        <section className='login'>
+
+            <div className="form_login">
                 <h2>Login</h2>
-                <form>
-                    <div className="input-box">
-                        <input type="email" required />
-                        <label>Email</label>
-                    </div>
-                    <div className="input-box">
-                        <input type="password" required />
-                        <label>Password</label>
-                    </div>
-                    <div className="remember-forgot">
-                        <label><input type="checkbox" />Remember me</label>
-                        <a href="forgot">Forgot password ?</a>
-                    </div>
-                    <button type="submit" className="btn">Login</button>
-                    <div className="login-register">
-                        <p>Don't have an account? <a href="register" className="register-link">Register</a></p>
-                    </div>
+
+                <form id='form' className='flex flex-col'>
+                    <input type="email" placeholder=' ' id='email' name='email' />
+                    <label for="email" style={{ textAlign: 'left' }}>Email</label>
+                    <input type="password" placeholder=' ' id='password' name='password' />
+                    <label for="password" style={{ textAlign: 'left' }}>Password</label>
+
+
+                    <button className='btn'>Login</button>
                 </form>
+                <h5>Don't have an account? <Link to={'/sign-up'} className='register_link'>Register</Link></h5>
             </div>
-        </div>
-    );
+        </section>
+    )
 }
-export default Login;
