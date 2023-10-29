@@ -2,15 +2,15 @@ import './cart.css';
 import { Button } from 'react-bootstrap';
 function Cart() {
     return (
-        <div className="container mt-5">
+        <div className="container mt-5 d-flex flex-column" >
             <div className="row  d-flex justify-content-between" id="shopping">
                 <div className="col-7 product">
                     <h3 className="title">Cart</h3>
                     <table id="shopping-products-table" className="table text-center align-middle">
                         <thead>
                             <tr>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
+                                <th scope="col">Index</th>
+                                <th scope="col">Thumbnail</th>
                                 <th scope="col">Product</th>
                                 <th scope="col">Price</th>
                                 <th scope="col">Quantity</th>
@@ -18,23 +18,32 @@ function Cart() {
                             </tr>
                         </thead>
                         <tbody id="productShop">
-                            <tr >
-                                <td><Button className=''><i className="bi bi-x-lg"></i></Button></td>
+                            <tr style={{ height: "250px" }} >
+                                <td>1</td>
                                 <td><img src='./images/product1.jfif' width={"120px"} height={"180px"} alt="Product thumbnail" /></td>
                                 <td>The Cofffe</td>
                                 <td>1000$</td>
                                 <td>1</td>
                                 <td>1000$</td>
+                                <td><i className="bi bi-x-lg delete_cart"></i></td>
                             </tr>
-
+                            <tr style={{ height: "250px" }}>
+                                <td>1</td>
+                                <td><img src='./images/product1.jfif' width={"120px"} height={"180px"} alt="Product thumbnail" /></td>
+                                <td>The Cofffe</td>
+                                <td>1000$</td>
+                                <td>1</td>
+                                <td>1000$</td>
+                                <td><i className="bi bi-x-lg delete_cart"></i></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
                 <div className="col-4 invoice">
 
 
-                    <h3>Cart totals</h3>
-                    <hr />
+                    <h3 style={{ paddingBottom: 16 }}>Cart totals</h3>
+                    <hr style={{ paddingBottom: 28 }} />
                     <div className="subTotal d-flex justify-content-between">
                     </div> <h5>Subtotal</h5><br />
 
@@ -51,8 +60,8 @@ function Cart() {
                     <button type="button" className="btn btn-dark mt-5">Proceed to checkout</button>
                 </div>
             </div>
-            <div>
-                <button className="btn btn-danger" >Delete all</button>
+            <div className='align-self-start'>
+                <button className="btn btn-danger btn_delete_cart" >Delete all</button>
             </div>
 
         </div>

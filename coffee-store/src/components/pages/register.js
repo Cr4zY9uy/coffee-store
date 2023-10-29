@@ -1,5 +1,6 @@
 import React from 'react'
 import './register.css';
+import { Link } from 'react-router-dom';
 export default function Register() {
 
     // console.log(watch('username'));
@@ -11,12 +12,18 @@ export default function Register() {
                     <h2>Register</h2>
 
                     <form id='form' className='flex flex-col' >
-                        <input type="text" placeholder='Username' />
-                        <input type="text" placeholder='Password' />
-                        <input type="text" placeholder='Confirm password' />
-                        <input type="text" placeholder='Email' />
-
-                        <button className='btn'>Sign In</button>
+                        <input type="text" placeholder=' ' id='username' name='username' />
+                        <label for="username" style={{ textAlign: 'left' }}>Username</label>
+                        <input type="password" placeholder=' ' id='password' name='password' />
+                        <label for="password" style={{ textAlign: 'left' }}>Password</label>
+                        <input type="password" placeholder=' ' id='repassword' name='repassword' />
+                        <label for="repassword" style={{ textAlign: 'left' }}>Verify password</label>
+                        <input type="email" placeholder=' ' id='email' name='email' />
+                        <label for="email" style={{ textAlign: 'left' }}>Email</label>
+                        <div className='d-flex align-items-start justify-content-between flex-column options'>
+                            <div className='d-flex align-items-center'><input type='checkbox'></input> Acecpt terms of policies and use</div>
+                            <div className='pt-1'>Already had an account? <Link to={'/login'} className='login_link'>Login</Link></div></div>
+                        <button className='btn mt-0'>Signin</button>
                     </form>
 
                 </div>

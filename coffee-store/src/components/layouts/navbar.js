@@ -7,14 +7,14 @@ function Navbars() {
                 <button className="dropmenu">Category
                 </button>
                 <div className="menu2">
-                    <NavLink to={'/category'}><a href="cate1">Link 1</a></NavLink>
-                    <NavLink to={'/category'}><a href="cate1">Link 1</a></NavLink>
-                    <NavLink to={'/category'}><a href="cate1">Link 1</a></NavLink>
+                    <NavLink to={'/category'}>Link 1</NavLink>
+                    <NavLink to={'/category'}>Link 1</NavLink>
+                    <NavLink to={'/category'}>Link 1</NavLink>
                 </div>
             </div>
-            <NavLink to={"/"}>Home</NavLink>
-            <NavLink to={"/products"}>Products</NavLink>
-            <NavLink to={"/favourite"}>Favourite</NavLink>
+            <NavLink to={"/"} className={'menu1_item'}>Home</NavLink>
+            <NavLink to={"/products"} className={'menu1_item'}>Products</NavLink>
+            <NavLink to={"/favourite"} className={'menu1_item'}>Favourite</NavLink>
         </nav>
     );
 }

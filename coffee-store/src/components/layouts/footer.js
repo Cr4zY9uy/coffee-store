@@ -3,7 +3,8 @@ import './footer.css';
 function Footer() {
     return (
         <footer className="container">
-            <div className="row text-start">
+            <hr className='container footer_hr'></hr>
+            <div className="row text-start footer">
                 <div className="col-4">
                     <h5>About</h5>
                     <p>How to purchase</p>
@@ -23,7 +24,8 @@ function Footer() {
                     <p>NotosCoffee@gmail.com</p>
                 </div>
             </div>
-            <div className="copyright"> <h5 className="fs-6">Copyright © 2023 by Anh Van. All Rights
+            <hr className='container'></hr>
+            <div className="copyright"> <h5>Copyright © 2023 by Anh Van. All Rights
                 Reserved.</h5></div>
         </footer>
     );

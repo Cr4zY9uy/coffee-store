@@ -16,10 +16,12 @@ import Product from './components/pages/product';
 import Orders from './components/pages/orders';
 import OrdersDetail from './components/pages/orderetail';
 import { useLocation } from 'react-router-dom';
+import ForgotPass from './components/pages/forgotpass';
+import ResetPass from './components/pages/resetpass';
 function App() {
   const location = useLocation();
 
-  const hideHeaderOnLogin = location.pathname === '/login' || location.pathname === '/sign-up';
+  const hideHeaderOnLogin = location.pathname === '/login' || location.pathname === '/sign-up' || location.pathname === '/resetpass' || location.pathname === '/forgotpass';
   return (
     <div className="App">
       {!hideHeaderOnLogin && <Header />}
@@ -33,6 +35,8 @@ function App() {
           <Route path='/cart' element={<Cart />} />
           <Route path='/sign-up' element={<Register />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/forgotpass' element={<ForgotPass />} />
+          <Route path='/resetpass' element={<ResetPass />} />
           <Route path='/favourite' element={<Favourite />} />
           <Route path='/account' element={<Account />} />
           <Route path='/orders' element={<Orders />} />

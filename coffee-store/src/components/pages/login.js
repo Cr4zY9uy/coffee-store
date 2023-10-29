@@ -16,8 +16,9 @@ export default function Login() {
                     <label for="email" style={{ textAlign: 'left' }}>Email</label>
                     <input type="password" placeholder=' ' id='password' name='password' />
                     <label for="password" style={{ textAlign: 'left' }}>Password</label>
-
-
+                    <div className='d-flex align-items-center justify-content-between options'>
+                        <div className='d-flex align-items-center'><input type='checkbox'></input> Remeber password</div>
+                        <div><Link to={'/forgotpass'} className='forgotpass_link'>Forgot password?</Link></div></div>
                     <button className='btn'>Login</button>
                 </form>
                 <h5>Don't have an account? <Link to={'/sign-up'} className='register_link'>Register</Link></h5>

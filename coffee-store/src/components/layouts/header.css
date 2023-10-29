@@ -6,12 +6,13 @@
 #search {
     padding: 0.6rem 1rem 0.6rem 1rem;
     outline: none;
+    border: 0.01rem solid #80808065;
 }
 
 .bi-search {
     right: 30px;
     position: relative;
-
+    color: #8080808e;
 }
 
 .bi-person-circle,
