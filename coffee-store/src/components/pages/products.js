@@ -1,20 +1,12 @@
 import './products.css'
-import ProductList from "../layouts/product_list";
-import PaginationProduct from "../layouts/pagination";
-
+import ProductsCate from "../layouts/products_cate";
+import FilterCateAndPrice from '../layouts/filterCateAndPrice';
 function Products() {
     return (
-        <>
-            <div className='banner_products'>
-                <h1>Products</h1>
-            </div>
-
-            <ProductList />
-            <ProductList />
-            <ProductList />
-            <ProductList />
-            <PaginationProduct />
-        </>
+        <div className='products_filter'>
+            <FilterCateAndPrice />
+            <ProductsCate />
+        </div>
     );
 }
 export default Products;

@@ -7,9 +7,9 @@ function Navbars() {
                 <button className="dropmenu">Category
                 </button>
                 <div className="menu2">
-                    <NavLink to={'/category'}>Link 1</NavLink>
-                    <NavLink to={'/category'}>Link 1</NavLink>
-                    <NavLink to={'/category'}>Link 1</NavLink>
+                    <NavLink to={'/category'}>Coffee beans</NavLink>
+                    <NavLink to={'/category'}>Coffee drinks</NavLink>
+                    <NavLink to={'/category'}>Coffee sweets</NavLink>
                 </div>
             </div>
             <NavLink to={"/"} className={'menu1_item'}>Home</NavLink>

@@ -1,9 +1,9 @@
-import { Button, Row, Col, Card } from "react-bootstrap";
+import {  Row, Col, Card } from "react-bootstrap";
 import './favourite.css'
 function Favourite() {
     return (
         <>
-              <div className='banner_favourite'>
+            <div className='banner_favourite'>
                 <h1>Favourite</h1>
             </div>
 

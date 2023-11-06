@@ -18,6 +18,7 @@ import OrdersDetail from './components/pages/orderetail';
 import { useLocation } from 'react-router-dom';
 import ForgotPass from './components/pages/forgotpass';
 import ResetPass from './components/pages/resetpass';
+import Checkout from './components/pages/checkout';
 function App() {
   const location = useLocation();
 
@@ -41,6 +42,7 @@ function App() {
           <Route path='/account' element={<Account />} />
           <Route path='/orders' element={<Orders />} />
           <Route path='/orderdetail' element={<OrdersDetail />} />
+          <Route path='/checkout' element={<Checkout />} />
         </Routes>
         {!hideHeaderOnLogin && <Footer />}
       </main>

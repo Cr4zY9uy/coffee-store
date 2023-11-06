@@ -1,5 +1,4 @@
 import './category_detail.css';
-import PaginationProduct from "../layouts/pagination";
 import ProductList from "../layouts/product_list";
 
 function CategoryDetail() {
@@ -13,7 +12,6 @@ function CategoryDetail() {
             <ProductList />
             <ProductList />
             <ProductList />
-            <PaginationProduct />
         </>
     );
 }

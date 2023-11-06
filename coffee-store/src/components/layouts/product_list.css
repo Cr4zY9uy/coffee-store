@@ -1,5 +1,5 @@
 .product-list>figure {
-    width: 225px;
+    width: 20%;
     margin: 0 10px 30px 10px;
     overflow: hidden;
     position: relative;
@@ -16,7 +16,7 @@
 }
 
 .product-action button {
-    width: 225px;
+    width: 100%;
     text-transform: uppercase;
     color: #333;
     border: .1rem solid #ebebeb;
@@ -89,8 +89,8 @@
 .product-list>figure:hover .favourite {
     display: flex;
     position: absolute;
-    top:15px;
-    left: 160px;
+    top: 15px;
+    left: 155px;
     animation: SlideLeft .3s ease-in-out;
 }
 

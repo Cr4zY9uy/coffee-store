@@ -12,7 +12,7 @@ function Footer() {
                     <p>What is Notos?</p>
                 </div>
                 <div className="col-4">
-                    <h5>Customer Services</h5>
+                    <h5>Services</h5>
                     <p>Privacy</p>
                     <p>Terms & Conditions</p>
                     <p>Payments</p>
